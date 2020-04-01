@@ -1,0 +1,141 @@
+@import url(//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI);
+:root{
+    --color-1 : #abc738;
+    --color-2 : #f3f3f3;
+    --color-white : #fff;
+    --color-black : #000;
+    --color-hover:#99b334;
+    --color-box-shadow : rgb(0, 0, 0,0.15);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-black);
+}
+body{
+    background-color: var(--color-2);
+}
+.page{
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+.header__top{
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-1);
+}
+.header{
+  height: 200px;
+}
+.contenaire__nav{
+    width: 100%;
+    background-color: var(--color-white);
+    height: 70px;
+}
+.nav__menu{
+    width: 990px;
+    max-width: 990px;
+    margin: 0 auto;
+    height: 70px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu .nav__menu-logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.nav__menu .nav__menu-logo svg{
+    width: 150px;
+}
+.nav__menu .nav__menu-ul{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__menu .nav__menu-ul .men-ul--li a:before{
+    content: '';
+    display: block;
+    position: relative;
+    top: 25px;
+    background-color: var(--color-black);
+    width: 0;
+    height: 2px;
+    transition: linear .2s;
+}
+.nav__menu .nav__menu-ul .men-ul--li a:after{
+    content: '';
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 50%;
+    background-color: var(--color-black);
+    width: 0;
+    height: 2px;
+    transition: linear .2s;
+}
+.nav__menu .nav__menu-ul .men-ul--li a:hover:before ,
+.nav__menu .nav__menu-ul .men-ul--li a:hover:after{
+    width: 50%;
+    transition: linear .2s;
+}
+.nav__menu .nav__menu-ul .men-ul--li a:hover.nav__menu-ul .subli{
+    display: block;
+}
+.nav__menu-ul .subli{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 5px var(--color-box-shadow);
+    display:none ;
+}
+.nav__menu-ul .subli-actualites{
+    top: 65px;
+}
+.nav__menu-ul .subli-tuto{
+    left: 130px;
+}
+.nav__menu-ul .subli-forum{
+    left: 250px;
+}
+.nav__menu-ul .subli-emploi{
+    left: 370px;
+}
+.nav__menu .nav__menu-buttons{
+    display: flex;
+    width: 22%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu .nav__menu-buttons .menu-buttons--ins{
+    padding: 5px 15px;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    color: var(--color-1);
+}
+.nav__menu .nav__menu-buttons .menu-buttons--conn{
+    padding: 5px 15px;
+    background-color:  var(--color-1);
+    border-radius: 5px;
+    color: var(--color-white);
+}
+.nav__menu .nav__menu-buttons .menu-buttons--conn:hover{
+    background-color: var(--color-hover) ;
+}
+
